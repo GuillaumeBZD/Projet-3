@@ -1,0 +1,17 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compil": "node-sass scss/main.scss css/style.css",
+    "watch": "node-sass scss/main.scss css/style.css -w",
+    "compress": "node-sass scss/main.scss css/style.css -w --output-style=compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
