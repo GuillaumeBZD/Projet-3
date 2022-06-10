@@ -21,7 +21,6 @@
     <title>ohmyfood</title>
   </head>
   <body>
-
     <header>
       <h1>ohmyfood</h1>
       <p class="localisation">
@@ -40,12 +39,104 @@
     <article class="fonctionnement">
       <dl class="fonctionnement_liste">
         <dt>Fonctionnement</dt>
-        <dd><a href="#"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</a></dd>
-        <dd><a href="#"><i class="fa-solid fa-list"></i>Composez votre menu</a></dd>
-        <dd><a href="#"><i class="fa-solid fa-store"></i>Dégustez au restaurant</a></dd>
+        <dd>
+          <a href="#"
+            ><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un
+            restaurant</a
+          >
+        </dd>
+        <dd>
+          <a href="#"><i class="fa-solid fa-list"></i>Composez votre menu</a>
+        </dd>
+        <dd class="fonctionnement_lien--var">
+          <a href="#"
+            ><i class="fa-solid fa-store"></i>Dégustez au restaurant</a
+          >
+        </dd>
       </dl>
     </article>
 
-    
+    <main class="restaurant">
+      <h2 class="restaurant_titre">Restaurants</h2>
+      <div class="restaurant_boite">
+        <figure class="restaurant_carte">
+          <img
+            class="restaurant_carte--images"
+            src="./images/restaurants/rest1.jpg"
+            alt="La palette du goût"
+          />
+          <figcaption>
+            <h3>La palette du goût</h3>
+            <div class="restaurant_carte--ajustement">
+              <p class="restaurant_carte--texte">Ménilmontant</p>
+              <p class="restaurant_carte--coeur">
+                <i class="fa-regular fa-heart"></i>
+              </p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="restaurant_carte">
+          <img src="./images/restaurants/rest2.jpg" alt="La note enchantée" />
+          <figcaption>
+            <h3>La note enchantée</h3>
+            <div class="restaurant_carte--ajustement">
+              <p class="restaurant_carte--texte">Charonne</p>
+              <p class="restaurant_carte--coeur">
+                <i class="fa-regular fa-heart"></i>
+              </p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="restaurant_carte">
+          <img src="./images/restaurants/rest3.jpg" alt="À la française" />
+          <figcaption>
+            <h3>À la française</h3>
+            <div class="restaurant_carte--ajustement">
+              <p class="restaurant_carte--texte">Cité Rouge</p>
+              <p class="restaurant_carte--coeur">
+                <i class="fa-regular fa-heart"></i>
+              </p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="restaurant_carte">
+          <img src="./images/restaurants/rest4.jpg" alt="Le délice des sens" />
+          <figcaption>
+            <h3>Le délice des sens</h3>
+            <div class="restaurant_carte--ajustement">
+              <p class="restaurant_carte--texte">Folie-Méricourt</p>
+              <p class="restaurant_carte--coeur">
+                <i class="fa-regular fa-heart"></i>
+              </p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+
+    <footer>
+      <dl class="footer_liste">
+        <dt class="footer_liste--titre">ohmyfood</dt>
+        <dd class="footer_liste--elem">
+          <a href="#" class="footer_liste--lien"
+            ><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a
+          >
+        </dd>
+        <dd class="footer_liste--elem">
+          <a href="#" class="footer_liste--lien"
+            ><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a
+          >
+        </dd>
+        <dd class="footer_liste--elem">
+          <a href="#" class="footer_liste--lien">Mentions légales</a>
+        </dd>
+        <dd class="footer_liste--elem">
+          <a href="#" class="footer_liste--lien">Contact</a>
+        </dd>
+      </dl>
+    </footer>
   </body>
 </html>
