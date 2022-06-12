@@ -29,6 +29,25 @@ header i {
 }
 /*fin du hader */
 
+/*debut main */
+main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+main img {
+  width: 100%;
+  height: 50%;
+}
+
+.menu_disposition {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*fin du main*/
+
 /* debut du footer */
 footer {
   background-color: #353535;
