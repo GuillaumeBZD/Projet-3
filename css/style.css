@@ -133,6 +133,12 @@ nav button {
 
 /* fin de l'article */
 /* début du main */
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .restaurant_carte {
   width: 305px;
   height: 200px;
@@ -166,6 +172,10 @@ img {
   padding-right: 15px;
   height: 40px; }
 
+.restaurant_carte--lien {
+  text-decoration: none;
+  color: black; }
+
 /* fin du main */
 /* debut du footer */
 footer {
@@ -173,7 +183,11 @@ footer {
   color: white;
   font-size: 18px;
   height: auto;
-  padding-left: 25px; }
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .footer_liste--titre {
   font-family: "Shrikhand";
