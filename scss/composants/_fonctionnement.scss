@@ -1,0 +1,54 @@
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.fonctionnement_liste {
+  list-style: none;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.fonctionnement a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.fonctionnement dt {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 15px;
+}
+.fonctionnement dd {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 70px;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  width: 350px;
+  padding-left: 15px;
+  margin-top: 25px;
+}
+
+.fonctionnement i {
+  padding-right: 15px;
+}
+
+.fonctionnement .fa-store {
+  color: $color-primary;
+}
+
+.fonctionnement .fa-list,
+.fa-mobile-screen-button {
+  color: gray;
+}
+.fonctionnement_lien--var {
+  background: #f5edff;
+}

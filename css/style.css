@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body {
+.base_site {
   margin: auto;
   font-family: roboto;
   display: flex;
@@ -12,76 +12,62 @@ body {
 * {
   box-sizing: border-box; }
 
-/*gestion du header */
-header {
-  width: 100%;
-  height: 120px; }
-
-header h1 {
-  font-family: "Shrikhand", cursive;
-  background-color: white;
-  width: 100%;
-  height: 60%;
-  padding: 2%;
-  margin: 0;
-  text-align: center;
-  box-shadow: 4px 4px 6px #e6e6e6;
-  border: 1px solid #e6e6e6; }
-
-header i {
-  padding-right: 1em;
-  font-size: larger; }
-
-.localisation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #eaeaea;
-  height: 40%;
-  padding-top: 0;
-  margin: 0; }
-
-/* fin du header */
-/*gestion du nav*/
-nav {
+footer {
+  background-color: #353535;
+  color: white;
+  font-size: 18px;
+  height: auto;
+  padding-left: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: auto;
-  background-color: #f6f6f6;
-  padding: 0 4%; }
+  align-items: center; }
 
-nav h2 {
-  font-size: 1.5em;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  padding-top: 35px; }
+.footer_liste--titre {
+  font-family: "Shrikhand";
+  font-size: 22px;
+  padding-bottom: 20px; }
 
-nav p {
-  color: #686868;
-  text-align: center; }
-
-nav a {
+.footer_liste--lien {
   text-decoration: none;
   color: white; }
 
-nav button {
-  width: auto;
-  display: flex;
-  height: 40px;
-  border-radius: 25px;
-  background: linear-gradient(#ff79da, #9356dc);
-  padding: 6% 4%;
-  justify-content: center;
-  align-items: center;
-  border-style: none;
-  box-shadow: 4px 4px 6px #e6e6e6;
-  margin-bottom: 45px; }
+.footer_liste--elem {
+  margin: 0;
+  padding-bottom: 8px; }
 
-/* fin du nav */
-/* début de l'article */
+.footer_liste--elem i {
+  padding-right: 10px; }
+
+.page_menu--logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px 0 20px 0; }
+
+.page_menu--logo img {
+  height: 34px;
+  width: 196px; }
+
+.page_menu--logo i {
+  font-size: 22px;
+  padding: 0 40px 0 15px; }
+
+.menu_pres {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  object-fit: cover; }
+
+.menu_pres--img {
+  width: 100%;
+  height: 50%; }
+
+.menu_disposition {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -131,7 +117,73 @@ nav button {
 .fonctionnement_lien--var {
   background: #f5edff; }
 
-/* fin de l'article */
+/*gestion du nav*/
+.navigation_base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #f6f6f6;
+  padding: 0 4%; }
+
+.navigation_base h2 {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding-top: 35px; }
+
+.navigation_base p {
+  color: #686868;
+  text-align: center; }
+
+.navigation_base a {
+  text-decoration: none;
+  color: white; }
+
+.navigation_base button {
+  width: 200px;
+  display: flex;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(#ff79da, #9356dc);
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  margin-bottom: 45px; }
+
+/*gestion du header */
+.header_site--basic {
+  width: 100%;
+  height: 120px; }
+
+.header_site--basic h1 {
+  font-family: "Shrikhand", cursive;
+  background-color: white;
+  width: 100%;
+  height: 60%;
+  padding: 2%;
+  margin: 0;
+  text-align: center;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  border: 1px solid #e6e6e6; }
+
+.header_site--basic i {
+  padding-right: 1em;
+  font-size: larger; }
+
+.header_site--basic .localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  height: 40%;
+  padding-top: 0;
+  margin: 0; }
+
+/* fin du header */
 /* début du main */
 .restaurant {
   display: flex;
@@ -160,7 +212,7 @@ nav button {
   font-size: 25px;
   vertical-align: top; }
 
-img {
+.restaurant img {
   height: 125px;
   width: 305px;
   object-fit: cover; }
@@ -175,32 +227,3 @@ img {
 .restaurant_carte--lien {
   text-decoration: none;
   color: black; }
-
-/* fin du main */
-/* debut du footer */
-footer {
-  background-color: #353535;
-  color: white;
-  font-size: 18px;
-  height: auto;
-  padding-left: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.footer_liste--titre {
-  font-family: "Shrikhand";
-  font-size: 22px;
-  padding-bottom: 20px; }
-
-.footer_liste--lien {
-  text-decoration: none;
-  color: white; }
-
-.footer_liste--elem {
-  margin: 0;
-  padding-bottom: 8px; }
-
-.footer_liste--elem i {
-  padding-right: 10px; }

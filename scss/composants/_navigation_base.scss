@@ -1,0 +1,41 @@
+/*gestion du nav*/
+.navigation_base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #f6f6f6;
+  padding: 0 4%;
+}
+
+.navigation_base h2 {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.navigation_base p {
+  color: #686868;
+  text-align: center;
+}
+
+.navigation_base a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation_base button {
+  width: 200px;
+  display: flex;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient($color-secondary, $color-primary);
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  margin-bottom: 45px;
+}

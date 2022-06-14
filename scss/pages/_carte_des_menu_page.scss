@@ -1,0 +1,16 @@
+.menu_pres {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  object-fit: cover;
+}
+.menu_pres--img {
+  width: 100%;
+  height: 50%;
+}
+
+.menu_disposition {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
