@@ -12,6 +12,7 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
+  width: 100%;
 }
 
 .fonctionnement a {
@@ -21,7 +22,7 @@
 }
 .fonctionnement dt {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
   margin-left: 15px;
 }
 .fonctionnement dd {
@@ -32,23 +33,30 @@
   text-align: center;
   border-radius: 18px;
   box-shadow: 4px 4px 6px #e6e6e6;
-  width: 350px;
+  width: 90%;
   padding-left: 15px;
   margin-top: 25px;
+  background-color: #f6f6f6;
+  margin-left: 15px;
 }
 
 .fonctionnement i {
   padding-right: 15px;
 }
 
-.fonctionnement .fa-store {
-  color: $color-primary;
-}
-
 .fonctionnement .fa-list,
-.fa-mobile-screen-button {
+.fa-mobile-screen-button .fa-store {
   color: gray;
 }
+
 .fonctionnement_lien--var {
   background: #f5edff;
+}
+
+.fonctionnement dd:hover {
+  background-color: #f5edff;
+}
+
+.fonctionnement i:hover {
+  color: $color-primary;
 }

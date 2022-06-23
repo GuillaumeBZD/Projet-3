@@ -1,52 +1,69 @@
 /* début du main */
 .restaurant {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .restaurant_carte {
-    width: 305px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 4px 4px 6px #e6e6e6;
-  }
-  
-  .restaurant_carte figcaption {
-    margin: 0;
-    padding: 7px 10px;
-  }
-  
-  .restaurant_carte h3 {
-    margin: 0;
-  }
-  
-  .restaurant_carte p {
-    margin: 0;
-  }
-  
-  .restaurant_carte--coeur .fa-heart {
-    font-size: 25px;
-    vertical-align: top;
-  }
-  
-  .restaurant img {
-    height: 125px;
-    width: 305px;
-    object-fit: cover;
-  }
-  
-  .restaurant_carte--ajustement {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    padding-right: 15px;
-    height: 40px;
-  }
-  
-  .restaurant_carte--lien {
-    text-decoration: none;
-    color: black;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.restaurant_titre {
+  margin-left: 15px;
+}
+.restaurant_boite {
+  width: 100%;
+  height: 920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.restaurant_carte {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  margin: 0;
+  padding-left: 0;
+  margin-inline: 0;
+  margin-block: 0;
+}
+
+.restaurant_carte figcaption {
+  margin: 0;
+  padding: 7px 10px;
+}
+
+.restaurant_carte h3 {
+  margin: 0;
+}
+
+.restaurant_carte p {
+  margin: 0;
+}
+
+.restaurant_carte--coeur .fa-heart {
+  font-size: 25px;
+  vertical-align: top;
+}
+
+.restaurant img {
+  height: 125px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.restaurant_carte--ajustement {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-right: 15px;
+  height: 40px;
+}
+
+.restaurant_carte--lien {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+  width: 95%;
+}
