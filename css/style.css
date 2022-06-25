@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.btn {
+.btn_accueil {
   width: 200px;
   display: flex;
   height: 50px;
@@ -9,7 +9,19 @@
   align-items: center;
   border-style: none;
   box-shadow: 4px 4px 6px #e6e6e6;
-  margin-bottom: 45px;
+  color: white;
+  margin-bottom: 45px; }
+
+.btn_commander {
+  width: 200px;
+  display: flex;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(#ff79da, #9356dc);
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  box-shadow: 4px 4px 6px #e6e6e6;
   color: white; }
 
 .base_site {
@@ -35,7 +47,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: flex-start; }
 
 .footer_liste--titre {
   font-family: "Shrikhand";
@@ -71,7 +83,8 @@ footer {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  object-fit: cover; }
+  object-fit: cover;
+  background-color: #f6f6f6; }
 
 .menu_pres--img {
   width: 100%;
@@ -80,7 +93,80 @@ footer {
 .menu_disposition {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 3%; }
+
+.menu_pres h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: -50px;
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0 0;
+  height: 70px;
+  padding: 15px 15px 15px 3%;
+  margin-bottom: 0; }
+
+.menu_pres .fa-heart {
+  font-size: 18px;
+  align-self: center;
+  padding-right: 15px; }
+
+.menu_pres .fa-heart:hover {
+  font-weight: 800;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.menu_pres dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 0;
+  gap: 8px; }
+
+.menu_pres dd {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  margin-inline-start: 0;
+  background-color: white;
+  height: 60px;
+  border-radius: 15px 15px;
+  width: 100%;
+  vertical-align: middle;
+  padding: 2%;
+  font-size: smaller; }
+
+.menu_titre--reglage {
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between; }
+
+.menu_titre--reglage span {
+  padding-right: 13px; }
+
+.prix {
+  font-weight: bold; }
+
+.menu_titre-plat {
+  font-size: 18px; }
+
+.menu_gestion--btn {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0; }
 
 .fonctionnement {
   display: flex;
@@ -134,7 +220,7 @@ footer {
 .fonctionnement dd:hover {
   background-color: #f5edff; }
 
-.fonctionnement i:hover {
+.fonctionnement dd:hover i {
   color: #9356dc; }
 
 /*gestion du nav*/
@@ -208,7 +294,8 @@ footer {
 .restaurant {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #e6e6e6; }
 
 .restaurant_titre {
   margin-left: 15px; }
@@ -246,6 +333,13 @@ footer {
 .restaurant_carte--coeur .fa-heart {
   font-size: 25px;
   vertical-align: top; }
+
+.restaurant_carte--coeur .fa-heart:hover {
+  font-weight: 800;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .restaurant img {
   height: 125px;

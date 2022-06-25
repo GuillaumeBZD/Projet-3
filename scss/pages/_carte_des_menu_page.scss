@@ -3,6 +3,7 @@
   flex-flow: column wrap;
   justify-content: space-between;
   object-fit: cover;
+  background-color: #f6f6f6;
 }
 .menu_pres--img {
   width: 100%;
@@ -13,4 +14,87 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-content: center;
+  padding: 0 3%;
+}
+
+.menu_pres h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: -50px;
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0 0;
+  height: 70px;
+  padding: 15px 15px 15px 3%;
+  margin-bottom: 0;
+}
+
+.menu_pres .fa-heart {
+  font-size: 18px;
+  align-self: center;
+  padding-right: 15px;
+}
+
+.menu_pres .fa-heart:hover {
+  font-weight: 800;
+  background: linear-gradient($color-primary, $color-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu_pres dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 0;
+  gap: 8px;
+}
+
+.menu_pres dd {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  margin-inline-start: 0;
+  background-color: white;
+  height: 60px;
+  border-radius: 15px 15px;
+  width: 100%;
+  vertical-align: middle;
+  padding: 2%;
+  font-size: smaller;
+}
+
+.menu_titre--reglage {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.menu_titre--reglage span {
+  padding-right: 13px;
+}
+
+.prix {
+  font-weight: bold;
+}
+
+.menu_titre-plat {
+  font-size: 18px;
+}
+
+.menu_gestion--btn {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
 }

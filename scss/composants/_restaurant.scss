@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #e6e6e6;
 }
 .restaurant_titre {
   margin-left: 15px;
@@ -44,6 +45,14 @@
 .restaurant_carte--coeur .fa-heart {
   font-size: 25px;
   vertical-align: top;
+}
+
+.restaurant_carte--coeur .fa-heart:hover {
+  font-weight: 800;
+  background: linear-gradient($color-primary, $color-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .restaurant img {
