@@ -318,7 +318,8 @@ footer {
   margin: 0;
   padding-left: 0;
   margin-inline: 0;
-  margin-block: 0; }
+  margin-block: 0;
+  background-color: white; }
 
 .restaurant_carte figcaption {
   margin: 0;
