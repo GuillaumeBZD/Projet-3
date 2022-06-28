@@ -77,7 +77,8 @@ footer {
 
 .page_menu--logo i {
   font-size: 22px;
-  padding: 0 40px 0 15px; }
+  padding: 0 40px 0 15px;
+  color: black; }
 
 .menu_pres {
   display: flex;
@@ -88,7 +89,8 @@ footer {
 
 .menu_pres--img {
   width: 100%;
-  height: 50%; }
+  height: 266px;
+  object-fit: cover; }
 
 .menu_disposition {
   display: flex;
@@ -144,7 +146,8 @@ footer {
   width: 100%;
   vertical-align: middle;
   padding: 2%;
-  font-size: smaller; }
+  font-size: smaller;
+  box-shadow: 4px 4px 6px #e6e6e6; }
 
 .menu_titre--reglage {
   display: flex;
@@ -174,24 +177,32 @@ footer {
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  width: 100%; }
 
 .fonctionnement_liste {
   list-style: none;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
 
 .fonctionnement a {
   text-decoration: none;
   color: black;
-  font-weight: bold; }
+  font-weight: bold;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center; }
 
 .fonctionnement dt {
   font-weight: bold;
   font-size: 24px;
-  margin-left: 15px; }
+  margin-left: 15px;
+  align-self: flex-start; }
 
 .fonctionnement dd {
   display: flex;
@@ -208,10 +219,7 @@ footer {
   margin-left: 15px; }
 
 .fonctionnement i {
-  padding-right: 15px; }
-
-.fonctionnement .fa-list,
-.fa-mobile-screen-button .fa-store {
+  padding-right: 15px;
   color: gray; }
 
 .fonctionnement_lien--var {
@@ -222,6 +230,18 @@ footer {
 
 .fonctionnement dd:hover i {
   color: #9356dc; }
+
+.fonctionnement_liste--chiffre {
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  color: white;
+  background-color: #9356dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -27px;
+  margin-right: 15px; }
 
 /*gestion du nav*/
 .navigation_base {
@@ -302,7 +322,7 @@ footer {
 
 .restaurant_boite {
   width: 100%;
-  height: 920px;
+  height: 1050px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -311,7 +331,7 @@ footer {
 
 .restaurant_carte {
   width: 100%;
-  height: 200px;
+  height: 234px;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 4px 4px 6px #e6e6e6;
@@ -343,7 +363,7 @@ footer {
   -webkit-text-fill-color: transparent; }
 
 .restaurant img {
-  height: 125px;
+  height: 165px;
   width: 100%;
   object-fit: cover; }
 

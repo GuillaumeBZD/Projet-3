@@ -10,7 +10,7 @@
 }
 .restaurant_boite {
   width: 100%;
-  height: 920px;
+  height: 1050px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -19,7 +19,7 @@
 }
 .restaurant_carte {
   width: 100%;
-  height: 200px;
+  height: 234px;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 4px 4px 6px #e6e6e6;
@@ -57,7 +57,7 @@
 }
 
 .restaurant img {
-  height: 125px;
+  height: 165px;
   width: 100%;
   object-fit: cover;
 }
