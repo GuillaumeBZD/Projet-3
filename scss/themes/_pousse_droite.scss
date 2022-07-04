@@ -1,7 +1,46 @@
 .menu_animation {
-  width: 50px;
+  width: 60px;
   height: 60px;
+  padding: 2%;
+  background-color:$third-color;
+  animation: pousse_droite 1s linear;
   position: relative;
-  left: 350px;
-  top: -30px;
+  left: 54px;
+}
+
+.menu_animation--vert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.fa-circle-check {
+  font-size: 22px;
+  color: white;
+  animation: rotate_check 1s linear;
+}
+
+@keyframes pousse_droite {
+  0% {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(-54px);
+    opacity: 1;
+  } 
+}
+
+@keyframes rotate_check {
+  0% {
+    transform: rotate(0)
+  } 
+  
+  100% {
+    transform: rotate(360deg)
+  }
 }

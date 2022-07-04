@@ -1,15 +1,16 @@
 .base_site {
   margin: auto;
-  font-family: roboto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: white;
   font-family: "Roboto", sans-serif;
   width: 100%;
-  max-width: 400px;
 }
 
 * {
   box-sizing: border-box;
+}
+@media (min-width: 1025px) { 
+  max-width: 1025px;
 }
