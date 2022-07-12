@@ -67,7 +67,7 @@
 
 .menu_pres dd {
   display: flex;
-  flex-flow: nowrap raw;
+  flex-flow: row nowrap;
   justify-content: space-between;
   margin-inline-start: 0;
   background-color: white;
@@ -78,6 +78,7 @@
   font-size: smaller;
   box-shadow: 4px 4px 6px #e6e6e6;
   overflow: hidden;
+  max-width: 340px;
 }
 
 .menu_titre--reglage {
@@ -150,6 +151,7 @@
   box-shadow: 4px 4px 6px #e6e6e6;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 340px;
 }
 
 .reglage-text {
@@ -157,7 +159,9 @@
   flex-flow: row wrap;
   width: 100%;
   padding: 2% 0 2% 2%;
+  max-width: 340px;
 }
+
 .menu_test--plat {
   width: 100%;
   margin: 0;

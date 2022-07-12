@@ -147,7 +147,7 @@ footer {
 
 .menu_pres dd {
   display: flex;
-  flex-flow: nowrap raw;
+  flex-flow: row nowrap;
   justify-content: space-between;
   margin-inline-start: 0;
   background-color: white;
@@ -157,7 +157,8 @@ footer {
   vertical-align: middle;
   font-size: smaller;
   box-shadow: 4px 4px 6px #e6e6e6;
-  overflow: hidden; }
+  overflow: hidden;
+  max-width: 340px; }
 
 .menu_titre--reglage {
   display: flex;
@@ -217,13 +218,15 @@ footer {
   font-size: smaller;
   box-shadow: 4px 4px 6px #e6e6e6;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  max-width: 340px; }
 
 .reglage-text {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  padding: 2% 0 2% 2%; }
+  padding: 2% 0 2% 2%;
+  max-width: 340px; }
 
 .menu_test--plat {
   width: 100%;
