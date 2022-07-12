@@ -1,11 +1,17 @@
 .menu_animation {
-  width: 60px;
+  width: 0;
   height: 60px;
-  padding: 2%;
-  background-color:$third-color;
-  animation: pousse_droite 1s linear;
-  position: relative;
-  left: 54px;
+  padding: 0;
+  background-color: $third-color;
+  opacity: 0;
+}
+
+.menu_entree dd:hover .menu_animation {
+  animation: pousse_droite 0.5s linear forwards;
+}
+
+.menu_entree dd:hover .menu_animation .fa-circle-check {
+  animation: rotate_check 0.5s linear;
 }
 
 .menu_animation--vert {
@@ -20,27 +26,27 @@
 .fa-circle-check {
   font-size: 22px;
   color: white;
-  animation: rotate_check 1s linear;
 }
 
 @keyframes pousse_droite {
   0% {
-    transform: translateX(60px);
+    width: 0;
     opacity: 0;
   }
 
   100% {
-    transform: translateX(-54px);
+    width: 60px;
     opacity: 1;
-  } 
+    padding: 2%;
+  }
 }
 
 @keyframes rotate_check {
   0% {
-    transform: rotate(0)
-  } 
-  
+    transform: rotate(0);
+  }
+
   100% {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }

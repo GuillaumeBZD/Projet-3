@@ -31,13 +31,11 @@
   justify-content: center;
   background-color: white;
   font-family: "Roboto", sans-serif;
-  width: 100%; }
+  width: 100%;
+  max-width: 1266px; }
 
 * {
   box-sizing: border-box; }
-
-@media (min-width: 1025px) {
-  max-width: 1025px; }
 
 footer {
   background-color: #353535;
@@ -104,6 +102,13 @@ footer {
   justify-content: space-between;
   align-content: center;
   padding: 0 3%; }
+
+.menu_souligne {
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+  position: relative;
+  top: -4px; }
 
 .menu_pres h2 {
   font-family: "Shrikhand", cursive;
@@ -192,6 +197,66 @@ footer {
   .page_menu--logo {
     margin: 30px 0 20px 25px; } }
 
+/*a suppr */
+.menu_test:hover .menu_animation {
+  animation: pousse_droite 0.5s linear forwards; }
+
+.menu_test:hover .menu_animation .fa-circle-check {
+  animation: rotate_check 0.5s linear; }
+
+.menu_test {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-inline-start: 0;
+  background-color: white;
+  height: 60px;
+  border-radius: 15px 15px;
+  width: 100%;
+  vertical-align: middle;
+  font-size: smaller;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.reglage-text {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 2% 0 2% 2%; }
+
+.menu_test--plat {
+  width: 100%;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.menu_test--reglage {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.test-p {
+  margin: 0;
+  margin-block: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.test-prix {
+  box-sizing: border-box;
+  padding-right: 2%;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0; }
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -269,7 +334,11 @@ footer {
     height: 150px;
     margin-inline-start: 0;
     margin-block-start: 0;
-    margin-block-end: 0; }
+    margin-block-end: 0;
+    flex-flow: row wrap;
+    justify-content: space-evenly; }
+  .fonctionnement dt {
+    width: 100%; }
   .fonctionnement dd {
     width: 25%;
     margin-inline-start: 0;
@@ -281,11 +350,15 @@ footer {
     height: 150px;
     margin-inline-start: 0;
     margin-block-start: 0;
-    margin-block-end: 0; }
+    margin-block-end: 0;
+    flex-flow: row wrap;
+    justify-content: space-evenly; }
+  .fonctionnement dt {
+    width: 100%; }
   .fonctionnement dd {
     width: 25%;
     margin-inline-start: 0;
-    margin-top: 25px; } }
+    margin-top: 0; } }
 
 /*gestion du nav*/
 .navigation_base {
@@ -337,8 +410,9 @@ footer {
   padding: 2%;
   margin: 0;
   text-align: center;
-  box-shadow: 4px 4px 6px #e6e6e6;
-  border: 1px solid #e6e6e6; }
+  box-shadow: -1px 1px 12px 0px #00000069;
+  z-index: 1;
+  position: relative; }
 
 .header_site--basic i {
   padding-right: 1em;
@@ -351,7 +425,8 @@ footer {
   background-color: #eaeaea;
   height: 40%;
   padding-top: 0;
-  margin: 0; }
+  margin: 0;
+  z-index: 0; }
 
 /* fin du header */
 /* début du main */
@@ -425,6 +500,22 @@ footer {
   margin: 0;
   width: 95%; }
 
+.restaurant_carte--nouveau {
+  background-color: #99e2d0;
+  color: #008766;
+  width: 70px;
+  height: 26px;
+  text-align: center;
+  position: relative;
+  top: -223px;
+  left: 75%;
+  font-size: small;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 2%; }
+
 @media (min-width: 481px) and (max-width: 1024px) {
   .restaurant_boite {
     flex-flow: row wrap;
@@ -448,7 +539,7 @@ footer {
   .restaurant_carte--lien {
     width: 22%; } }
 
-/* .loading {
+.loading {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -464,8 +555,7 @@ footer {
   position: fixed;
   animation: back_to_back 300ms 3s linear;
   animation-fill-mode: forwards;
-  transform-origin: bottom;
-}
+  transform-origin: bottom; }
 
 .loading div {
   box-sizing: border-box;
@@ -473,66 +563,57 @@ footer {
   width: 140px;
   height: 140px;
   border: 13px solid transparent;
-  border-top-color: $color-primary;
+  border-top-color: #9356dc;
   border-radius: 50%;
-  animation: spinner_1 1.5s linear infinite; 
-}
+  animation: spinner_1 1.5s linear infinite; }
 
 .loading div:nth-child(2) {
   border: 13px solid transparent;
-  border-bottom-color: $color-secondary;
-  animation: spinner_2 1.5s linear infinite; 
-}
+  border-bottom-color: #ff79da;
+  animation: spinner_2 1.5s linear infinite; }
 
 @keyframes spinner_1 {
   0% {
     transform: rotate(0deg);
-    border-width: 13px;
-  }
+    border-width: 13px; }
   50% {
     transform: rotate(180deg);
-    border-width: 1px;
-  }
+    border-width: 1px; }
   100% {
     transform: rotate(360deg);
-    border-width: 13px;
-  }
-}
+    border-width: 13px; } }
 
 @keyframes spinner_2 {
   0% {
     transform: rotate(0deg);
-    border-width: 1px;
-  }
+    border-width: 1px; }
   50% {
     transform: rotate(180deg);
-    border-width: 13px;
-  }
+    border-width: 13px; }
   100% {
     transform: rotate(360deg);
-    border-width: 1px;
-  }
-}
+    border-width: 1px; } }
 
 @keyframes back_to_back {
   from {
     transform: scale(1);
-    opacity: 0.9;
-  }
-
+    opacity: 0.9; }
   to {
     transform: scale(0);
-    opacity: 0;
-  }
-} */
+    opacity: 0; } }
+
 .menu_animation {
-  width: 60px;
+  width: 0;
   height: 60px;
-  padding: 2%;
+  padding: 0;
   background-color: #99e2d0;
-  animation: pousse_droite 1s linear;
-  position: relative;
-  left: 54px; }
+  opacity: 0; }
+
+.menu_entree dd:hover .menu_animation {
+  animation: pousse_droite 0.5s linear forwards; }
+
+.menu_entree dd:hover .menu_animation .fa-circle-check {
+  animation: rotate_check 0.5s linear; }
 
 .menu_animation--vert {
   display: flex;
@@ -544,16 +625,16 @@ footer {
 
 .fa-circle-check {
   font-size: 22px;
-  color: white;
-  animation: rotate_check 1s linear; }
+  color: white; }
 
 @keyframes pousse_droite {
   0% {
-    transform: translateX(60px);
+    width: 0;
     opacity: 0; }
   100% {
-    transform: translateX(-54px);
-    opacity: 1; } }
+    width: 60px;
+    opacity: 1;
+    padding: 2%; } }
 
 @keyframes rotate_check {
   0% {

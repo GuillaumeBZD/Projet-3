@@ -1,4 +1,4 @@
-/* .loading {
+.loading {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -28,7 +28,7 @@
   animation: spinner_1 1.5s linear infinite; 
 }
 
-.loading div:nth-child(2) {
+.loading div:nth-child(2) { 
   border: 13px solid transparent;
   border-bottom-color: $color-secondary;
   animation: spinner_2 1.5s linear infinite; 
@@ -74,5 +74,4 @@
     transform: scale(0);
     opacity: 0;
   }
-} */
-
+}

@@ -6,11 +6,9 @@
   background-color: white;
   font-family: "Roboto", sans-serif;
   width: 100%;
+  max-width: 1266px;
 }
 
 * {
   box-sizing: border-box;
-}
-@media (min-width: 1025px) { 
-  max-width: 1025px;
 }

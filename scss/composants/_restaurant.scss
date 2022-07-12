@@ -78,6 +78,23 @@
   width: 95%;
 }
 
+.restaurant_carte--nouveau {
+  background-color: $third-color;
+  color: #008766;
+  width: 70px;
+  height: 26px;
+  text-align: center;
+  position: relative;
+  top: -223px;
+  left: 75%;
+  font-size: small;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 2%;
+}
+
 @media (min-width: 481px) and (max-width: 1024px) {
   .restaurant_boite {
     flex-flow: row wrap;

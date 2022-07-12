@@ -19,6 +19,13 @@
   padding: 0 3%;
 }
 
+.menu_souligne {
+  width: 40px;
+  height: 3px;
+  background-color: $third-color;
+  position: relative;
+  top: -4px;
+}
 .menu_pres h2 {
   font-family: "Shrikhand", cursive;
   font-weight: 500;
@@ -117,4 +124,71 @@
   .page_menu--logo {
     margin: 30px 0 20px 25px;
   }
+}
+
+/*a suppr */
+
+.menu_test:hover .menu_animation {
+  animation: pousse_droite 0.5s linear forwards;
+}
+
+.menu_test:hover .menu_animation .fa-circle-check {
+  animation: rotate_check 0.5s linear;
+}
+
+.menu_test {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-inline-start: 0;
+  background-color: white;
+  height: 60px;
+  border-radius: 15px 15px;
+  width: 100%;
+  vertical-align: middle;
+  font-size: smaller;
+  box-shadow: 4px 4px 6px #e6e6e6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.reglage-text {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 2% 0 2% 2%;
+}
+.menu_test--plat {
+  width: 100%;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu_test--reglage {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.test-p {
+  margin: 0;
+  margin-block: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.test-prix {
+  box-sizing: border-box;
+  padding-right: 2%;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
