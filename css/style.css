@@ -189,14 +189,9 @@ footer {
   white-space: nowrap;
   overflow: hidden; }
 
-.menu_titre--reglage span {
-  padding-right: 13px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden; }
-
 .prix {
-  font-weight: bold; }
+  font-weight: bold;
+  padding-right: 13px; }
 
 .menu_titre-plat {
   font-size: 18px;
