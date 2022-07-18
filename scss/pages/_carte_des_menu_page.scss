@@ -85,12 +85,20 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-width: 340px;
 }
 .menu_titre-plat {
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
 }
 
+.texte--plat {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .menu_titre--reglage {
   display: flex;
   flex-flow: row nowrap;
@@ -99,12 +107,14 @@
   margin-top: 4px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .menu_titre--reglage span {
   padding-right: 13px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .prix {
@@ -113,6 +123,9 @@
 
 .menu_titre-plat {
   font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .menu_gestion--btn {
@@ -133,6 +146,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
