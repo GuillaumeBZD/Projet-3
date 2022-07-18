@@ -28,6 +28,7 @@
   margin-inline: 0;
   margin-block: 0;
   background-color: white;
+  position: relative;
 }
 
 .restaurant_carte figcaption {
@@ -80,13 +81,13 @@
 
 .restaurant_carte--nouveau {
   background-color: $third-color;
-  color: #008766;
+  color: darken($third-color, 30%);
   width: 70px;
   height: 26px;
   text-align: center;
-  position: relative;
-  top: -223px;
-  left: 75%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
   font-size: small;
   font-weight: 500;
   padding: 0;
