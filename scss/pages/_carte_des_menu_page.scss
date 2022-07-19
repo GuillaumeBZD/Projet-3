@@ -51,14 +51,17 @@
   font-size: 18px;
   align-self: center;
   padding-right: 15px;
+  text-shadow: 0 0 0 black;
 }
 
 .menu_pres .fa-heart:hover {
   font-weight: 800;
+  text-shadow: unset;
   background: linear-gradient($color-primary, $color-secondary);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 0.5s linear;
 }
 
 .menu_pres dl {
@@ -135,7 +138,6 @@
   width: 100%;
   height: 100%;
   padding: 2%;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

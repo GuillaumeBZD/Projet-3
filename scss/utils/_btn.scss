@@ -15,11 +15,14 @@
 .btn_accueil {
   @include btn;
   margin-bottom: 45px;
+  transition: linear 0.3s;
 }
 
 .btn_accueil:hover {
   box-shadow: 4px 4px 6px darken(#e6e6e6, 30%);
-  /*background: linear-gradient lighten($color-secondary, $color-primary, 10%); */
+  /*background: linear-gradient (lighten($color-secondary, 10%), lighten($color-primary, 10%));*/filter: brightness(110%);
+  
+
 }
 
 .btn_commander {

@@ -47,15 +47,18 @@
 .restaurant_carte--coeur .fa-heart {
   font-size: 25px;
   vertical-align: top;
+  color: transparent;
+  text-shadow: 0 0 0 black;
 }
 
 .restaurant_carte--coeur .fa-heart:hover {
   font-weight: 800;
+  text-shadow: unset;
   background: linear-gradient($color-primary, $color-secondary);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 1.2s;
+  transition: 0.5s linear;
 }
 
 .restaurant img {
@@ -93,7 +96,6 @@
   font-weight: 500;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   padding: 2%;
 }
 
