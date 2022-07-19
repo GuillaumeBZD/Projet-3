@@ -8,9 +8,13 @@
   justify-content: center;
   align-items: center;
   border-style: none;
-  box-shadow: 4px 4px 6px #e6e6e6;
+  box-shadow: 4px 4px 6px #c7c7c7;
   color: white;
   margin-bottom: 45px; }
+
+.btn_accueil:hover {
+  box-shadow: 4px 4px 6px #9a9a9a;
+  /*background: linear-gradient lighten($color-secondary, $color-primary, 10%); */ }
 
 .btn_commander {
   width: 200px;
@@ -21,8 +25,11 @@
   justify-content: center;
   align-items: center;
   border-style: none;
-  box-shadow: 4px 4px 6px #e6e6e6;
+  box-shadow: 4px 4px 6px #c7c7c7;
   color: white; }
+
+.btn_commander:hover {
+  box-shadow: 4px 4px 6px #9a9a9a; }
 
 .base_site {
   margin: auto;
@@ -63,6 +70,9 @@ footer {
 
 .footer_liste--elem i {
   padding-right: 10px; }
+
+.fa-handshake-angle {
+  font-size: 13px; }
 
 @media (min-width: 481px) and (max-width: 1024px) {
   footer {
@@ -277,6 +287,7 @@ footer {
   padding-left: 15px;
   margin-top: 25px;
   background-color: #f6f6f6;
+  min-width: 240px;
   margin-left: 15px; }
 
 .fonctionnement i {
@@ -307,7 +318,6 @@ footer {
 @media (min-width: 481px) and (max-width: 1024px) {
   .fonctionnement_liste {
     width: 100%;
-    height: 150px;
     margin-inline-start: 0;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -318,7 +328,9 @@ footer {
   .fonctionnement dd {
     width: 25%;
     margin-inline-start: 0;
-    margin-top: 25px; } }
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-left: 20px; } }
 
 @media (min-width: 1025px) {
   .fonctionnement_liste {
@@ -360,18 +372,6 @@ footer {
 .navigation_base a {
   text-decoration: none;
   color: white; }
-
-.navigation_base button {
-  width: 200px;
-  display: flex;
-  height: 50px;
-  border-radius: 25px;
-  background: linear-gradient(#ff79da, #9356dc);
-  justify-content: center;
-  align-items: center;
-  border-style: none;
-  box-shadow: 4px 4px 6px #e6e6e6;
-  margin-bottom: 45px; }
 
 /*gestion du header */
 .header_site--basic {
@@ -456,7 +456,8 @@ footer {
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  transition: 1.2s; }
 
 .restaurant img {
   height: 165px;
@@ -517,7 +518,7 @@ footer {
     width: 22%; } }
 
 .loading {
-  display: none;
+  display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
@@ -530,7 +531,7 @@ footer {
   z-index: 2;
   opacity: 1;
   position: fixed;
-  animation: back_to_back 300ms 3s linear;
+  animation: back_to_back 300ms 2s linear;
   animation-fill-mode: forwards;
   transform-origin: bottom; }
 
@@ -630,3 +631,25 @@ footer {
     transform: rotate(0); }
   100% {
     transform: rotate(360deg); } }
+
+.menu_entree dd {
+  animation: slide_bot 1s linear;
+  animation-fill-mode: backwards; }
+
+.menu_plat dd {
+  animation: slide_bot 1s linear;
+  animation-fill-mode: backwards; }
+
+.menu_dessert dd {
+  animation: slide_bot 1s linear;
+  animation-fill-mode: backwards; }
+
+@keyframes slide_bot {
+  0% {
+    transform: translateY(0);
+    opacity: 0; }
+  50% {
+    opacity: 0.1; }
+  100% {
+    transform: translateY(100px);
+    opacity: 0.5; } }

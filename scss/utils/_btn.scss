@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   border-style: none;
-  box-shadow: 4px 4px 6px #e6e6e6;
+  box-shadow: 4px 4px 6px #c7c7c7;
 
   color: white;
 }
@@ -17,6 +17,14 @@
   margin-bottom: 45px;
 }
 
+.btn_accueil:hover {
+  box-shadow: 4px 4px 6px darken(#e6e6e6, 30%);
+  /*background: linear-gradient lighten($color-secondary, $color-primary, 10%); */
+}
+
 .btn_commander {
   @include btn;
+}
+.btn_commander:hover {
+  box-shadow: 4px 4px 6px darken(#e6e6e6, 30%);
 }

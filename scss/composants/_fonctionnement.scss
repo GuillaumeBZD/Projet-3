@@ -46,6 +46,7 @@
   padding-left: 15px;
   margin-top: 25px;
   background-color: #f6f6f6;
+  min-width: 240px;
   margin-left: 15px;
 }
 
@@ -82,7 +83,6 @@
 @media (min-width: 481px) and (max-width: 1024px) {
   .fonctionnement_liste {
     width: 100%;
-    height: 150px;
     margin-inline-start: 0;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -96,6 +96,8 @@
     width: 25%;
     margin-inline-start: 0;
     margin-top: 25px;
+    margin-left: 20px;
+    margin-left: 20px;
   }
 }
 

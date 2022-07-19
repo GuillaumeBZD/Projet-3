@@ -1,0 +1,29 @@
+.menu_entree dd {
+  animation: slide_bot 1s linear;
+  animation-fill-mode: backwards;
+}
+
+.menu_plat dd {
+  animation: slide_bot 1s linear;
+  animation-fill-mode: backwards;
+}
+
+.menu_dessert dd {
+  animation: slide_bot 1s linear;
+  animation-fill-mode: backwards;
+}
+
+@keyframes slide_bot {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0.5;
+  }
+}

@@ -1,5 +1,5 @@
 .loading {
-  display: none;
+  display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
   z-index: 2;
   opacity: 1;
   position: fixed;
-  animation: back_to_back 300ms 3s linear;
+  animation: back_to_back 300ms 2s linear;
   animation-fill-mode: forwards;
   transform-origin: bottom;
 }
@@ -25,13 +25,13 @@
   border: 13px solid transparent;
   border-top-color: $color-primary;
   border-radius: 50%;
-  animation: spinner_1 1.5s linear infinite; 
+  animation: spinner_1 1.5s linear infinite;
 }
 
-.loading div:nth-child(2) { 
+.loading div:nth-child(2) {
   border: 13px solid transparent;
   border-bottom-color: $color-secondary;
-  animation: spinner_2 1.5s linear infinite; 
+  animation: spinner_2 1.5s linear infinite;
 }
 
 @keyframes spinner_1 {
