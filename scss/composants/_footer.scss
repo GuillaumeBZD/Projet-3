@@ -39,3 +39,13 @@ footer {
     align-items: center;
   }
 }
+
+@media (min-width: 1025px) {
+  footer {
+    padding: 0 15%;
+  }
+
+  footer dl {
+    margin-left: 15px;
+  }
+}

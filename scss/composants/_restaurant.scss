@@ -96,7 +96,7 @@
   font-weight: 500;
   padding: 0;
   margin: 0;
-  padding: 2%;
+  padding: 5px;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -118,6 +118,9 @@
 }
 
 @media (min-width: 1025px) {
+  .restaurant {
+    padding: 0 15%;
+  }
   .restaurant_boite {
     flex-flow: row wrap;
     justify-content: center;
@@ -128,6 +131,7 @@
   }
 
   .restaurant_carte--lien {
-    width: 22%;
+    width: 45%;
+    min-width: 200px;
   }
 }

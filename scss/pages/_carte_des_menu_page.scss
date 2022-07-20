@@ -153,6 +153,20 @@
 }
 
 @media (min-width: 1025px) {
+  .menu_pres {
+    align-items: center;
+    background-color: white;
+  }
+
+  .menu_pres--img {
+    height: 45vh;
+  }
+
+  .menu_pres dl {
+    gap: 12px;
+    margin: 0 8px 25px 8px;
+  }
+
   .menu_disposition {
     display: flex;
     flex-direction: row;
@@ -160,6 +174,19 @@
     padding: 0 3%;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 75%;
+    background-color: #f6f6f6;
+  }
+
+  .menu_pres h2 {
+    width: 75%;
+  }
+
+  .menu_gestion--btn {
+    margin: 0;
+    padding: 25px 0;
+    background-color: #f6f6f6;
+    width: 75%;
   }
 }
