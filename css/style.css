@@ -88,7 +88,8 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 30px 0 20px 0; }
+  margin: 0 0 20px 0;
+  padding-top: 35px; }
 
 .page_menu--logo img {
   height: 34px;
@@ -245,7 +246,7 @@ footer {
     align-items: center;
     background-color: white; }
   .menu_pres--img {
-    height: 45vh; }
+    height: 47vh; }
   .menu_pres dl {
     gap: 12px;
     margin: 0 8px 25px 8px; }
@@ -265,7 +266,10 @@ footer {
     margin: 0;
     padding: 25px 0;
     background-color: #f6f6f6;
-    width: 75%; } }
+    width: 75%;
+    height: 150px; }
+  .texte--plat {
+    font-size: 14px; } }
 
 .fonctionnement {
   display: flex;
