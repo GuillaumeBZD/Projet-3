@@ -20,9 +20,7 @@
 
 .btn_accueil:hover {
   box-shadow: 4px 4px 6px darken(#e6e6e6, 30%);
-  /*background: linear-gradient (lighten($color-secondary, 10%), lighten($color-primary, 10%));*/filter: brightness(110%);
-  
-
+  filter: brightness(110%);
 }
 
 .btn_commander {
@@ -30,4 +28,5 @@
 }
 .btn_commander:hover {
   box-shadow: 4px 4px 6px darken(#e6e6e6, 30%);
+  filter: brightness(110%);
 }

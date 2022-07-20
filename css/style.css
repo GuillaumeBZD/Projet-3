@@ -15,7 +15,6 @@
 
 .btn_accueil:hover {
   box-shadow: 4px 4px 6px #9a9a9a;
-  /*background: linear-gradient (lighten($color-secondary, 10%), lighten($color-primary, 10%));*/
   filter: brightness(110%); }
 
 .btn_commander {
@@ -31,7 +30,8 @@
   color: white; }
 
 .btn_commander:hover {
-  box-shadow: 4px 4px 6px #9a9a9a; }
+  box-shadow: 4px 4px 6px #9a9a9a;
+  filter: brightness(110%); }
 
 body {
   font-family: "Roboto", sans-serif;
