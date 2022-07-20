@@ -31,3 +31,8 @@
   filter: brightness(110%);
 }
 
+@media (min-width: 1025px) {
+  .btn_accueil {
+    margin-bottom: 12px;
+  }
+}
