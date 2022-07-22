@@ -95,6 +95,7 @@
   white-space: nowrap;
   overflow: hidden;
   margin: 0;
+  font-size: 16px;
 }
 
 .texte--plat {
@@ -116,13 +117,7 @@
 .prix {
   font-weight: bold;
   padding-right: 13px;
-}
-
-.menu_titre-plat {
-  font-size: 18px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  padding-left: 5px;
 }
 
 .menu_gestion--btn {
@@ -144,6 +139,12 @@
   align-content: center;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+@media (max-width: 339px) {
+  .menu_pres dd {
+    width: 280px;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
