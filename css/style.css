@@ -625,22 +625,26 @@ footer {
   height: 60px;
   padding: 0;
   background-color: #99e2d0;
-  opacity: 0; }
+  opacity: 0;
+  transition: 1.2s; }
 
 .menu_entree dd:hover .menu_animation {
-  animation: pousse_droite 0.5s linear forwards; }
+  width: 60px;
+  opacity: 1; }
 
 .menu_entree dd:hover .menu_animation .fa-circle-check {
   animation: rotate_check 0.5s linear; }
 
 .menu_plat dd:hover .menu_animation {
-  animation: pousse_droite 0.5s linear forwards; }
+  width: 60px;
+  opacity: 1; }
 
 .menu_plat dd:hover .menu_animation .fa-circle-check {
   animation: rotate_check 0.5s linear; }
 
 .menu_dessert dd:hover .menu_animation {
-  animation: pousse_droite 0.5s linear forwards; }
+  width: 60px;
+  opacity: 1; }
 
 .menu_dessert dd:hover .menu_animation .fa-circle-check {
   animation: rotate_check 0.5s linear; }
@@ -662,8 +666,7 @@ footer {
     opacity: 0; }
   100% {
     width: 60px;
-    opacity: 1;
-    padding: 2%; } }
+    opacity: 1; } }
 
 @keyframes rotate_check {
   0% {

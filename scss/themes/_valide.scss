@@ -4,10 +4,12 @@
   padding: 0;
   background-color: $third-color;
   opacity: 0;
+  transition: 1.2s;
 }
 
 .menu_entree dd:hover .menu_animation {
-  animation: pousse_droite 0.5s linear forwards;
+  width: 60px;
+  opacity: 1;
 }
 
 .menu_entree dd:hover .menu_animation .fa-circle-check {
@@ -15,7 +17,8 @@
 }
 
 .menu_plat dd:hover .menu_animation {
-  animation: pousse_droite 0.5s linear forwards;
+  width: 60px;
+  opacity: 1;
 }
 
 .menu_plat dd:hover .menu_animation .fa-circle-check {
@@ -23,7 +26,8 @@
 }
 
 .menu_dessert dd:hover .menu_animation {
-  animation: pousse_droite 0.5s linear forwards;
+  width: 60px;
+  opacity: 1;
 }
 
 .menu_dessert dd:hover .menu_animation .fa-circle-check {
@@ -51,7 +55,6 @@
   100% {
     width: 60px;
     opacity: 1;
-    padding: 2%;
   }
 }
 
